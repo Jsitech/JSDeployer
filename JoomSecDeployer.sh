@@ -1,12 +1,12 @@
 #!/bin/bash
-# SecureWPDeployer - Automated Secure Joomla Deployer
+# JSDeployer - Automated Secure Joomla Deployer
 #Jason Soto
 #jason_soto [AT] jsitech [DOT] com
 #www.jsitech.com
 #Twitter = @JsiTech
 
 # Server Hardening With JShielder
-# Joomla Hardening With WPHardening From Daniel Maldonado @elcodigok
+# Joomla Hardening Steps
 
 
 # @license          http://www.gnu.org/licenses/gpl.txt  GNU GPL 3.0
