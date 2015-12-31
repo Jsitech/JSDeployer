@@ -229,6 +229,12 @@ spinner
 sleep 0.02
 cp templates/htaccess.txt /var/www/html/$DIR/.htaccess
 
+domain=$(echo $domain_name | cut -d '.' -f1)
+top_lvl_dom=$(echo $domain_name | cut -d '.' -f2)
+
+sed -i s/example/$domain/g /var/www/html/$DIR/.htaccess
+sed -i s/.com/.$top_lvl_dom/g /var/www/html/$DIR/.htaccess
+
 ls /usr/bin/dpkg > /dev/null 2>&1
 if [ $? -eq 0 ]; then
     chown www-data:www-data /var/www/html/$DIR.htaccess
